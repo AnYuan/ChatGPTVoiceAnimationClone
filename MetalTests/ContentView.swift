@@ -7,15 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        MetalView()
+            .frame(width:300, height: 300)
+            .clipShape(.circle)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
